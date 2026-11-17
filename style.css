@@ -1,0 +1,149 @@
+/* Configuration globale */
+
+body {
+    background: #041821;
+    color : white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex; /* Utilisation de Flexbox pour organiser les éléments */
+    justify-content: space-between; /* Espace les éléments de manière égale */
+    align-items: center;
+    border-bottom: 1px solid #62707b;    
+    padding: 10px 10px;
+}
+
+#photographe {
+    text-transform: uppercase; /* Affiche en majuscules */
+}
+
+#photographe span {
+    color: rgb(22, 215, 22)
+}
+
+
+header nav span{
+    margin: 10px
+}
+
+/* Les polices */
+
+.yeseva-one-regular {
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1 span{
+    color: #1fd29b;
+}
+
+h1{
+    font-family: 'Yeseva One', serif;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: #546771;
+    max-width: 550px;
+    margin-top: 30px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.categories a {
+    font-family: 'Montserrat', sans-serif;
+    color: #b0b8c0;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.categories a.actif {
+    background-color: #1fd29b;
+    color: white;
+    padding: 8px 16px;
+}
+
+.photos {
+    display: grid; /* Utilisation de CSS Grid pour structurer la grille */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.photos img{
+    width: 100%;
+}
+
+/* Responsive design */
+
+/* Tablette */
+@media all and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .photos {
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 10px;                             
+    }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+    .photos {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;                              
+    }
+    .categories ul {
+        flex-wrap: wrap;        
+        gap: 15px;             
+        justify-content: center;
+    }
+
+    .categories a {
+        font-size: 12px;       
+        padding: 6px 10px;     
+    }
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b0b8c0;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 5px 0;
+    text-align: center;
+}
