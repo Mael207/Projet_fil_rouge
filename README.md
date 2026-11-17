@@ -12,5 +12,5 @@ Cette page web est responsive (ordinateur, tablette, téléphone) avec pour obje
 * **HTML5** : Structuration sémantique du contenu.
 * **CSS3** : Mise en page
 * **Google Fonts** : Intégration des polices
-* **Font Awesome** : Intégration des icônes vectorielles.
+* **Font Awesome** : Intégration des icônes.
 
